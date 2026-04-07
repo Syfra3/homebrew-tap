@@ -25,10 +25,7 @@ class Ancora < Formula
   end
 
   def install
-    # Tarball contains a platform-specific binary name like "ancora-1.0.2-linux-amd64"
-    # We need to rename it to just "ancora" when installing
-    binary_name = Dir["ancora-*"].first
-    bin.install binary_name => "ancora"
+    bin.install "ancora"
   end
 
   test do
