@@ -10,7 +10,7 @@ if [ $# -eq 0 ]; then
 fi
 
 VERSION="$1"
-REPO="Syfra3/syfra"
+REPO="Syfra3/ancora"
 PACKAGE="ancora"
 
 echo "Updating ${PACKAGE} formula to version ${VERSION}..."
@@ -20,7 +20,7 @@ declare -A CHECKSUMS
 
 for platform in darwin-arm64 darwin-amd64 linux-arm64 linux-amd64; do
     echo "Downloading checksum for ${platform}..."
-    URL="https://github.com/${REPO}/releases/download/ancora-v${VERSION}/${PACKAGE}-${VERSION}-${platform}.tar.gz.sha256"
+    URL="https://github.com/${REPO}/releases/download/v${VERSION}/${PACKAGE}-${VERSION}-${platform}.tar.gz.sha256"
     
     SHA256=$(curl -sL "$URL" | awk '{print $1}')
     
