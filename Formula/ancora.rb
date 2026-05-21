@@ -1,26 +1,26 @@
 class Ancora < Formula
   desc "Persistent memory system for AI agents with hybrid search and MCP integration"
   homepage "https://github.com/Syfra3/ancora"
-  version "1.10.3"
+  version "1.10.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Syfra3/ancora/releases/download/v#{version}/ancora-#{version}-darwin-arm64.tar.gz"
-      sha256 "1c5ae86f03aaf57b79add08df5e8f725d9baf740c0107606d2643cd5e43c5d12"
+      sha256 "dd751d04f418f49af84c5c2d9681008585fd05dcfc3439e9df727ae68165aabd"
     else
       url "https://github.com/Syfra3/ancora/releases/download/v#{version}/ancora-#{version}-darwin-amd64.tar.gz"
-      sha256 "1fa0c66d01b33e25fc152d23bf9b3464cc73ef0c556557882bb3ee1c0e51fede"
+      sha256 "fced28985076182f22797e705415355565233bc558d7fc8f9b9583a99a6cd05b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Syfra3/ancora/releases/download/v#{version}/ancora-#{version}-linux-arm64.tar.gz"
-      sha256 "58f2f9c86ccc8dd7f75bf7eb148977e36a856405fad616cbba1ce1e6ca8a919b"
+      sha256 "7114b9cdbb8a1ba2bfbb774f0cee05843533090d13f6ae1108c5078501059843"
     else
       url "https://github.com/Syfra3/ancora/releases/download/v#{version}/ancora-#{version}-linux-amd64.tar.gz"
-      sha256 "7da82f972e0c1a3eb6084852945f4e011d198647a56eaf2f6a5f7d0caf1c5ff1"
+      sha256 "d6c58e0301fda22398bf4f32c13f422106fe320e0df245ff3cc3b9338af7a981"
     end
   end
 
