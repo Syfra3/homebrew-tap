@@ -1,26 +1,26 @@
 class Vela < Formula
   desc "Knowledge graph daemon for AI agents with real-time Ancora sync and Obsidian export"
   homepage "https://github.com/Syfra3/vela"
-  version "1.10.0"
+  version "1.10.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Syfra3/vela/releases/download/v#{version}/vela-#{version}-darwin-arm64.tar.gz"
-      sha256 "6ff4a5e5bb89caa933df81fa2f0d6fb174c11c20d7ebddbf28876356d9497dce"
+      sha256 "c19089ca22d512a08082abc6455fa4f5b20e771b5109f3442545e7d453252b23"
     else
       url "https://github.com/Syfra3/vela/releases/download/v#{version}/vela-#{version}-darwin-amd64.tar.gz"
-      sha256 "ad1fadb2ac02c734942e1d05291453a849da4398ad5bbd3498047ae1f97de2fd"
+      sha256 "5104e7bfd999429c378e2b221a8be10ac5de6b7164ec9d8b0db19325818b0e53"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Syfra3/vela/releases/download/v#{version}/vela-#{version}-linux-arm64.tar.gz"
-      sha256 "9b9d596ae17fded3bf92c14f19e0b112dd9815d7bb9609466877a9a09bc66fa4"
+      sha256 "60d3921bd623adca3f951edcfdd0c25677dc6600f5a54af429459b9f00ccf2df"
     else
       url "https://github.com/Syfra3/vela/releases/download/v#{version}/vela-#{version}-linux-amd64.tar.gz"
-      sha256 "1a7026ee1d08d51535c5a1e3bc8fece595bce95c20b23470f5087c534023a526"
+      sha256 "3c6e09465fc41f6db2df6cc0e6265a42860f471dd5d0162e8294a509889696d0"
     end
   end
 
