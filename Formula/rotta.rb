@@ -1,26 +1,26 @@
 class Rotta < Formula
   desc "Contract-driven development orchestrator for AI coding agents"
   homepage "https://github.com/Syfra3/Rotta"
-  version "1.10.1"
+  version "1.11.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Syfra3/Rotta/releases/download/v#{version}/rotta-#{version}-darwin-arm64.tar.gz"
-      sha256 "90d12cd590e118de40b4446481974a2fbe47044036eb7c34b5c7b1f6445b4844"
+      sha256 "a4772daa5e30b35a9dba6a8a07198110450039b818a016b701761108c41fe6a4"
     else
       url "https://github.com/Syfra3/Rotta/releases/download/v#{version}/rotta-#{version}-darwin-amd64.tar.gz"
-      sha256 "181d119bfec67ad8c05227c11531830100a7b6fa989a09e1e9b712eddf97b487"
+      sha256 "5cb5a1161b22af19131e4f5a1e30d98994f0a75e3f30bc9ad5390dce12bd22cd"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Syfra3/Rotta/releases/download/v#{version}/rotta-#{version}-linux-arm64.tar.gz"
-      sha256 "53d202b317a82e0e6798104ad3276183ea9cc31605b2d57b50f8c50ecde47288"
+      sha256 "8ce96f7cf00afe83cf331c2aca2e6237b6c9483350ec36f7a07845360033c082"
     else
       url "https://github.com/Syfra3/Rotta/releases/download/v#{version}/rotta-#{version}-linux-amd64.tar.gz"
-      sha256 "6c7711e91b07f6f68db0e5820f68042d46afd092a12c0f3ba115a1eaf33b91f8"
+      sha256 "5902db2a23bf3a23eb4c7a704be02d837dac60a9a75480e69a1e6ee359ddbf2e"
     end
   end
 
