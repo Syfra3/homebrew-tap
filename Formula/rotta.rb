@@ -1,7 +1,7 @@
 class Rotta < Formula
   desc "Contract-driven development orchestrator for AI coding agents"
   homepage "https://github.com/Syfra3/Rotta"
-  version "1.13.0"
+  version "1.12.0"
   license "Apache-2.0"
 
   on_macos do
